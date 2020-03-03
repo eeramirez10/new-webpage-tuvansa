@@ -1,0 +1,23 @@
+<app-slider [infos]='infos'></app-slider>
+
+<div id="colorlib-project">
+    <div class="container">
+        <div class="row">
+            <div *ngFor=" let producto of productos;   let i = index;" class="col-md-6 animate-box">
+                <div class="item item-2">
+                    <a href="assets/images/building-1.jpg" class="project image-popup-link"
+                          [ngStyle]="{'background-image': 'url('+ producto.img +')' }">
+                        <div class="desc-t">
+                            <div class="desc-tc">
+                                <div class="desc">
+                                    <h3><span><small>{{ i + 1 }} </small></span> {{producto.tipo}} </h3>
+                                    <p> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

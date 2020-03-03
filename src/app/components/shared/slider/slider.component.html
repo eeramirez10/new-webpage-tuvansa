@@ -1,0 +1,19 @@
+<aside id="colorlib-hero">
+    <div class="flexslider">
+        <ul class="slides">
+            <li *ngFor=" let info of infos "  [ngStyle]="{'background-image': 'url('+info.img+')' }">
+                <div class="overlay"></div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
+                            <div class="slider-text-inner text-center">
+                               <!--  <h2>SOMOS UNA EMPRESA ORGULLOSAMENTE MEXICANA CON MAS DE CINCO DECADAS DE EXPERIENCIA.</h2> -->
+                                <h2>{{ info.text }} </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</aside>

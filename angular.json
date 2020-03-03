@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tuvansaWebApp"
+    }
+  },
+  "defaultProject": "tuvansaWebApp",
+  "cli": {
+    "analytics": false
+  }
 }
